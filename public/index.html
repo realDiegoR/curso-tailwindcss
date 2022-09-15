@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <title>Tailwind CSS</title>
+</head>
+
+<body>
+    <nav></nav>
+    <section class="dark:bg-black">
+        <div id="home" class="h-[75vh] lg:h[55vh]">
+            <div class="relative w-full h-full">
+                <div class="w-full h-full">
+                    <picture>
+                        <source srcset="./img/sanFranciscoDesktop.jpg" media="(min-width: 1024px)"
+                            class="w-full h-full">
+                        <img src="./img/sanFrancisco.jpg" class="w-full h-full" alt="">
+                    </picture>
+                </div>
+                <div
+                    class="w-full h-full flex flex-col justify-between items-center absolute top-0 py-8 lg:justify-center lg:items-start lg:px-20">
+                    <input
+                        class="w-3/4 max-w-sm outline-none p-3 rounded-full text-center shadow-sm transition-all duration-300 ease-in-out focus:shadow-xl focus:ring-2 focus:w-11/12 lg:hidden"
+                        placeholder="San Francisco" type="search" name="">
+                    <div class="lg:w-96 lg:flex lg:flex-col lg:items-start lg:space-y-6">
+                        <p class="hidden font-bold text-4xl lg:block">Find More Locations like this</p>
+                        <button
+                            class="bg-white text-primary text-xl font-semibold px-8 py-4 rounded-full shadow-sm transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110">
+                            Explorar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="recomendados" class="p-6">
+            <p class="font-semibold text-3xl text-primary">Recomendados</p>
+            <div class="w-auto mt-4 pb-4 overflow-x-auto overscroll-x-contain space-x-3 flex">
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+                    <div class="w-full h-2/5 bg-secondary p-3 rounded-b-lg">
+                        <p class="text-white font-bold text-xl">Norway</p>
+                        <p class="text-white">Beautiful Landscapes</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+                    <div class="w-full h-2/5 bg-white p-3 rounded-b-lg">
+                        <p class="text-terciary font-bold text-xl">New York</p>
+                        <p class="text-terciary">Concrete Jungle</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
+                    <div class="w-full h-2/5 bg-white p-3 rounded-b-lg">
+                        <p class="text-terciary font-bold text-xl">Seattle</p>
+                        <p class="text-terciary">Great Tower</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rentas_destacadas" class="px-8 space-y-4">
+            <p class="font-semibold text-3xl text-primary">Rentas Destacadas</p>
+            <div class="w-full space-y-4 sm:text-right">
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl sm:h-[35rem] xl:h-[55rem] bg-bottom">
+                    <p class="CardTitle">Chicago</p>
+                    <p class="text-sm px-8 text-black">2 habitaciones, baño y cocina</p>
+                </div>
+                <div class="w-full gap-4 grid grid-cols-1 sm:grid-rows-2 sm:grid-cols-5">
+                    <div class="w-full h-96 bg-LA bg-cover rounded-xl sm:h-[35rem] sm:row-span-2 sm:col-span-2 xl:h-[55rem]">
+                        <p class="CardTitle">Los Angeles</p>
+                        <p class="text-sm px-8 text-white">3 habitaciones, 2 baños, cocina y alberque</p>
+                    </div>
+                    <div class="w-full h-96 bg-miami bg-cover rounded-xl sm:h-auto sm:col-span-3 bg-center">
+                        <p class="CardTitle">Miami</p>
+                        <p class="text-sm px-8 text-black">4 habitaciones, 2 baños, cocina y terraza con vist al mar
+                        </p>
+                    </div>
+                    <div class="w-full h-96 bg-bali bg-cover rounded-xl sm:h-auto sm:row-span-1 sm:col-span-3 bg-center">
+                        <p class="CardTitle mt-16 sm:mt-0">Bali</p>
+                        <p class="text-sm px-8 text-white">2 habitaciones, 2 baños, cocina y piscina privada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="faqs" class="px-8 py-6 space-y-4">
+            <p class="text-3xl text-primary font-semibold">FAQS</p>
+            <div>
+                <p class="FAQTitle">Política de Cancelación</p>
+                <p class="FAQText">Para estancias menores a una semana es importante avisar con 3 días de anticipación,
+                    de caso contario será sancionado.</p>
+            </div>
+            <div>
+                <p class="FAQTitle">Métodos de pago</p>
+                <p class="FAQText">
+                    Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
+                    Paypal y Binance
+                </p>
+            </div>
+            <div>
+                <p class="FAQTitle">Mascotas</p>
+                <p class="FAQText">El tema de las mascotas dependerá directamente del anfitrión.</p>
+            </div>
+            <div>
+                <p class="FAQTitle">Información de Seguridad</p>
+                <p class="FAQText">
+                    Todas nuestras estancias cuentan con seguro en caso de accidentes
+                </p>
+            </div>
+            <div>
+                <p class="FAQTitle">Estancias Largas</p>
+                <p class="FAQText">
+                    Contamos con estancias de hasta 3 meses, en este caso es requerido un
+                    anticipo con un monto del 50% del valor de la renta
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-50 p-6 space-y-2">
+        <p class="text-lg text-gray-700 font-medium pb-2">Acerca de</p>
+        <p class="text-gray-400">Inversionistas</p>
+        <p class="text-gray-400">Empleos</p>
+        <p class="text-gray-400">Términos y Condiciones</p>
+        <p class="text-gray-400">Platzi Travel. Inc</p>
+        <p class="text-gray-400">Síguenos</p>
+    </footer>
+    <div id="tab_bar" class="w-full h-14 bg-white fixed bottom-0 left-0 border-t text-gray-200 lg:hidden">
+        <ul class="h-full flex justify-center items-center space-x-6">
+            <li><a href="#home" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                        <path
+                            d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                    </svg>
+                </a></li>
+            <li><a href="#rentas_destacadas" class="text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a></li>
+            <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                    </svg>
+                </a></li>
+            <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a></li>
+            <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
